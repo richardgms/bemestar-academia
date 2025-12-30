@@ -1,0 +1,419 @@
+{
+  "academia": {
+    "nome": "Bem Estar Academia",
+    "nomeAbreviado": "BE",
+    "slogan": "Vem ser BE",
+    "tagline": "10 anos transformando vidas. Treine no conforto que você merece, com gente que torce por você.",
+    "aniversario": {
+      "anos": 10,
+      "slogan": "10 anos transformando vidas",
+      "hashtag": "#10anosBe"
+    },
+    "instagram": "@bemestar_academia",
+    "instagramUrl": "https://instagram.com/bemestar_academia",
+    "whatsapp": "5583999999999",
+    "endereco": {
+      "rua": "Rua Édson de Queiroz",
+      "numero": "554",
+      "bairro": "Centro",
+      "cidade": "Santa Rita",
+      "estado": "PB",
+      "completo": "Rua Édson de Queiroz, 554, Centro, Santa Rita-PB"
+    },
+    "horarioFuncionamento": {
+      "semana": "5h às 22h",
+      "sabado": "8h às 12h",
+      "domingo": "Fechado"
+    }
+  },
+  "diferenciais": [
+    {
+      "id": 1,
+      "titulo": "Estrutura Completa",
+      "descricao": "Ambiente 100% climatizado, equipamentos modernos e espaço amplo. Tudo pra você treinar com conforto.",
+      "icone": "Dumbbell"
+    },
+    {
+      "id": 2,
+      "titulo": "Você é Família",
+      "descricao": "Aqui a gente sabe seu nome e torce por você. Você não é só um número, é parte da família BE.",
+      "icone": "Heart"
+    },
+    {
+      "id": 3,
+      "titulo": "Acompanhamento Real",
+      "descricao": "Nossa equipe conhece seu objetivo e acompanha sua evolução. Cada conquista é comemorada junto.",
+      "icone": "TrendingUp"
+    },
+    {
+      "id": 4,
+      "titulo": "Tudo Pra Você",
+      "descricao": "Estacionamento próprio, aulas coletivas variadas, musculação completa. Tudo num lugar só.",
+      "icone": "CheckCircle"
+    }
+  ],
+  "horarios": {
+    "segunda": {
+      "label": "Segunda",
+      "periodos": {
+        "tarde": [
+          {
+            "hora": "14:00",
+            "aula": "FitDance",
+            "professor": "Wanderson"
+          },
+          {
+            "hora": "15:00",
+            "aula": "BodyPump",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "15:00",
+            "aula": "RPM",
+            "professor": "Jean"
+          },
+          {
+            "hora": "17:00",
+            "aula": "Pilates Solo",
+            "professor": "Bruno"
+          }
+        ],
+        "noite": [
+          {
+            "hora": "18:00",
+            "aula": "BodyPump",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "19:00",
+            "aula": "Dança de Salão",
+            "professor": "George"
+          },
+          {
+            "hora": "19:00",
+            "aula": "RPM",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "20:00",
+            "aula": "Muay Thai",
+            "professor": "Amaral"
+          }
+        ]
+      }
+    },
+    "terca": {
+      "label": "Terça",
+      "periodos": {
+        "tarde": [
+          {
+            "hora": "14:00",
+            "aula": "FitDance",
+            "professor": "Wanderson"
+          },
+          {
+            "hora": "15:00",
+            "aula": "RPM",
+            "professor": "Jean"
+          },
+          {
+            "hora": "17:00",
+            "aula": "Pilates Solo",
+            "professor": "Bruno"
+          }
+        ],
+        "noite": [
+          {
+            "hora": "18:00",
+            "aula": "BodyPump",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "19:00",
+            "aula": "RPM",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "20:00",
+            "aula": "Muay Thai",
+            "professor": "Amaral"
+          }
+        ]
+      }
+    },
+    "quarta": {
+      "label": "Quarta",
+      "periodos": {
+        "tarde": [
+          {
+            "hora": "14:00",
+            "aula": "FitDance",
+            "professor": "Wanderson"
+          },
+          {
+            "hora": "15:00",
+            "aula": "BodyPump",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "15:00",
+            "aula": "RPM",
+            "professor": "Jean"
+          },
+          {
+            "hora": "17:00",
+            "aula": "Pilates Solo",
+            "professor": "Bruno"
+          }
+        ],
+        "noite": [
+          {
+            "hora": "18:00",
+            "aula": "BodyPump",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "19:00",
+            "aula": "Dança de Salão",
+            "professor": "George"
+          },
+          {
+            "hora": "19:00",
+            "aula": "RPM",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "20:00",
+            "aula": "Muay Thai",
+            "professor": "Amaral"
+          }
+        ]
+      }
+    },
+    "quinta": {
+      "label": "Quinta",
+      "periodos": {
+        "tarde": [
+          {
+            "hora": "14:00",
+            "aula": "FitDance",
+            "professor": "Wanderson"
+          },
+          {
+            "hora": "15:00",
+            "aula": "RPM",
+            "professor": "Jean"
+          },
+          {
+            "hora": "17:00",
+            "aula": "Pilates Solo",
+            "professor": "Bruno"
+          }
+        ],
+        "noite": [
+          {
+            "hora": "18:00",
+            "aula": "BodyPump",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "19:00",
+            "aula": "RPM",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "20:00",
+            "aula": "Muay Thai",
+            "professor": "Amaral"
+          }
+        ]
+      }
+    },
+    "sexta": {
+      "label": "Sexta",
+      "periodos": {
+        "tarde": [
+          {
+            "hora": "14:00",
+            "aula": "FitDance",
+            "professor": "Wanderson"
+          },
+          {
+            "hora": "15:00",
+            "aula": "BodyPump",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "15:00",
+            "aula": "RPM",
+            "professor": "Jean"
+          },
+          {
+            "hora": "17:00",
+            "aula": "Pilates Solo",
+            "professor": "Bruno"
+          }
+        ],
+        "noite": [
+          {
+            "hora": "18:00",
+            "aula": "BodyPump",
+            "professor": "Amaral"
+          },
+          {
+            "hora": "19:00",
+            "aula": "RPM",
+            "professor": "Amaral"
+          }
+        ]
+      }
+    },
+    "sabado": {
+      "label": "Sábado",
+      "periodos": {
+        "manha": [
+          {
+            "hora": "08:00",
+            "aula": "FitDance",
+            "professor": "Wanderson"
+          },
+          {
+            "hora": "09:00",
+            "aula": "BodyPump",
+            "professor": "Amaral"
+          }
+        ]
+      }
+    }
+  },
+  "modalidades": [
+    {
+      "nome": "FitDance",
+      "descricao": "Queime calorias dançando ao som dos maiores hits! Aula animada pra todos os níveis.",
+      "duracao": "60min",
+      "icone": "Music",
+      "cor": "#FF6B00",
+      "corGradient": [
+        "#FF6B00",
+        "#E55F00"
+      ]
+    },
+    {
+      "nome": "BodyPump",
+      "descricao": "Treino de resistência com barras e anilhas. Defina e fortaleça o corpo todo.",
+      "duracao": "60min",
+      "icone": "Dumbbell",
+      "cor": "#FF6B00",
+      "corGradient": [
+        "#FF6B00",
+        "#E55F00"
+      ]
+    },
+    {
+      "nome": "RPM",
+      "descricao": "Ciclismo indoor de alta energia. Pedal forte, música alta e muita queima!",
+      "duracao": "45min",
+      "icone": "Bike",
+      "cor": "#FF6B00",
+      "corGradient": [
+        "#FF6B00",
+        "#E55F00"
+      ]
+    },
+    {
+      "nome": "Pilates Solo",
+      "descricao": "Fortaleça o core, melhore a postura e ganhe flexibilidade com exercícios no solo.",
+      "duracao": "60min",
+      "icone": "Sparkles",
+      "cor": "#FF6B00",
+      "corGradient": [
+        "#FF6B00",
+        "#E55F00"
+      ]
+    },
+    {
+      "nome": "Dança de Salão",
+      "descricao": "Aprenda forró, samba e outros ritmos. Divirta-se enquanto se exercita!",
+      "duracao": "60min",
+      "icone": "Users",
+      "cor": "#FF6B00",
+      "corGradient": [
+        "#FF6B00",
+        "#E55F00"
+      ]
+    },
+    {
+      "nome": "Muay Thai",
+      "descricao": "Arte marcial tailandesa. Condicionamento extremo, técnica e autodefesa.",
+      "duracao": "60min",
+      "icone": "Flame",
+      "cor": "#FF6B00",
+      "corGradient": [
+        "#FF6B00",
+        "#E55F00"
+      ]
+    }
+  ],
+  "equipe": [
+    {
+      "nome": "Wanderson",
+      "funcao": "Professor",
+      "especialidade": "FitDance"
+    },
+    {
+      "nome": "Amaral",
+      "funcao": "Professor",
+      "especialidade": "BodyPump, RPM, Muay Thai"
+    },
+    {
+      "nome": "Jean",
+      "funcao": "Professor",
+      "especialidade": "RPM"
+    },
+    {
+      "nome": "Bruno",
+      "funcao": "Professor",
+      "especialidade": "Pilates Solo"
+    },
+    {
+      "nome": "George",
+      "funcao": "Professor",
+      "especialidade": "Dança de Salão"
+    }
+  ],
+  "planos": [
+    {
+      "nome": "Plano Start",
+      "destaque": false,
+      "descricao": "Pra você que quer começar sua jornada",
+      "beneficios": [
+        "Acesso à musculação completa",
+        "1 modalidade de aula coletiva",
+        "Avaliação física inicial",
+        "Acompanhamento dos instrutores"
+      ],
+      "cta": "Saber Mais",
+      "mensagemWhatsapp": "Oi! Vim pelo site e queria saber mais sobre o Plano Start. Podem me passar as condições?"
+    },
+    {
+      "nome": "Plano Completo",
+      "destaque": true,
+      "badge": "Mais Escolhido",
+      "descricao": "Acesso total pra evoluir de verdade",
+      "beneficios": [
+        "Tudo do Plano Start",
+        "Acesso ilimitado às aulas coletivas",
+        "Plano alimentar personalizado",
+        "Acompanhamento premium",
+        "Acesso ao programa Black BE"
+      ],
+      "cta": "Quero Esse!",
+      "mensagemWhatsapp": "Oi! Vi no site que o Plano Completo é o mais escolhido e fiquei interessado! Quais as condições?"
+    }
+  ],
+  "mensagensWhatsapp": {
+    "aulaExperimental": "Oi! Vim pelo site e quero agendar minha aula experimental gratuita na BE!",
+    "duvidas": "Oi! Vim pelo site da Bem Estar e queria tirar algumas dúvidas.",
+    "horarios": "Oi! Queria confirmar os horários das aulas coletivas. Podem me ajudar?"
+  }
+}
