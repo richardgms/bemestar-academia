@@ -77,7 +77,7 @@ export function PlanosSection() {
                                     <img
                                         src="/assets/logo-icon-laranja.svg"
                                         alt=""
-                                        className="w-[200%] h-[200%] object-contain opacity-[0.1] -rotate-12 -ml-24"
+                                        className="w-[280px] h-[280px] md:w-[200%] md:h-[200%] object-contain opacity-[0.1] -rotate-12 -ml-24"
                                     />
                                 </div>
 
