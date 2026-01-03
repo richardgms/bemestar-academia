@@ -84,8 +84,8 @@ export function ModalidadesSection() {
                     <button
                         key={index}
                         className={`w-2 h-2 rounded-full transition-all duration-300 ${activeIndex === index
-                                ? "bg-brand w-6"
-                                : "bg-muted hover:bg-brand/50"
+                            ? "bg-brand w-6"
+                            : "bg-muted hover:bg-brand/50"
                             }`}
                         onClick={() => scrollToCard(index)}
                         aria-label={`Ir para card ${index + 1}`}
@@ -131,12 +131,9 @@ interface ModalidadeCardProps {
 
 function ModalidadeCard({ mod, Icon, color }: ModalidadeCardProps) {
     return (
-        <div className="group relative bg-background rounded-[2rem] md:rounded-[2.5rem] overflow-hidden border border-border hover:shadow-2xl hover:border-brand/30 transition-all duration-500 h-full flex flex-col">
-            {/* Top Border/Gradient */}
-            <div
-                className="h-2 md:h-2.5 w-full"
-                style={{ background: `linear-gradient(90deg, ${mod.corGradient[0]}, ${mod.corGradient[1]})` }}
-            />
+        <div className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
+            {/* Top Border */}
+            <div className="h-2.5 w-full bg-[#FF6B00] shrink-0" />
 
             <div className="p-5 md:p-8 lg:p-12 flex flex-col flex-1">
                 <div className="flex items-start justify-between mb-4 md:mb-8">

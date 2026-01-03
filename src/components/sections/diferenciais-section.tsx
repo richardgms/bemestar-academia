@@ -62,21 +62,18 @@ export function DiferenciaisSection() {
                             className={cn("h-full", feature.colSpan)}
                         >
                             <Card className={cn(
-                                "group relative h-full overflow-hidden border-border transition-all duration-500 hover:shadow-2xl hover:border-brand/30 flex flex-col",
+                                "group relative h-full overflow-hidden transition-all duration-500 hover:shadow-2xl flex flex-col rounded-xl shadow-md border-0",
                                 // Featured Card (Image) styling overrides
-                                feature.bgImage ? "border-0" : "bg-card"
+                                feature.bgImage ? "" : "bg-white"
                             )}>
-                                {/* GRADIENT TOP BORDER (Standard Cards only) */}
+                                {/* Top Border (Standard Cards only) */}
                                 {!feature.bgImage && (
-                                    <div
-                                        className="h-2 w-full shrink-0"
-                                        style={{ background: 'linear-gradient(90deg, #FF6B00, #FF9500)' }}
-                                    />
+                                    <div className="h-2.5 w-full bg-[#FF6B00] shrink-0" />
                                 )}
 
                                 <CardContent className={cn(
-                                    "p-0 flex flex-col flex-1 h-full",
-                                    feature.bgImage ? "p-0" : "p-6 md:p-8 lg:p-10"
+                                    "p-0 flex flex-col flex-1",
+                                    feature.bgImage ? "p-0 h-full" : "p-6 md:p-8 lg:p-10"
                                 )}>
                                     {/* CARD COM IMAGEM (ESTRUTURA) */}
                                     {feature.bgImage ? (

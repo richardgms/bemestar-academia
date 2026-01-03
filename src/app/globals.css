@@ -6,16 +6,19 @@
   --color-brand-dark: #E55F00;
   --color-brand-light: #FFF4ED;
 
-  /* Secundária */
-  --color-accent: #0EA5E9;
+  /* Secundária - Ciano */
+  --color-accent: #22D3EE;
   --color-accent-light: #E0F7FF;
   --color-brand-accent: #22D3EE;
   /* Ciano - Conforme DESIGN-SYSTEM.md */
 
+  /* Override Black */
+  --color-black: #222222;
+
   /* Neutros */
   --color-background: #FAFAFA;
   --color-surface: #FFFFFF;
-  --color-foreground: #1A1A1A;
+  --color-foreground: #222222;
   --color-muted: #6B7280;
   --color-muted-light: #9CA3AF;
 
@@ -29,7 +32,7 @@
 
   /* Gradients */
   --background-image-gradient-brand: linear-gradient(135deg, #FF6B00 0%, #E55F00 100%);
-  --background-image-gradient-hero-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%);
+  --background-image-gradient-hero-overlay: linear-gradient(180deg, rgba(34, 34, 34, 0.4) 0%, rgba(34, 34, 34, 0.6) 50%, rgba(34, 34, 34, 0.8) 100%);
 
   /* Animations */
   --animate-accordion-down: accordion-down 0.2s ease-out;
@@ -75,7 +78,7 @@
 
 :root {
   --background: #FAFAFA;
-  --foreground: #1A1A1A;
+  --foreground: #222222;
 }
 
 body {
@@ -108,7 +111,7 @@ html {
   }
 
   ::-webkit-scrollbar-track {
-    background: #0A0A0A;
+    background: #222222;
     /* Cinza Chumbo Intenso */
   }
 
@@ -116,7 +119,7 @@ html {
     background: #FF6B00;
     /* Laranja Marca */
     border-radius: 10px;
-    border: 3px solid #0A0A0A;
+    border: 3px solid #222222;
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -126,7 +129,7 @@ html {
   /* Firefox */
   * {
     scrollbar-width: thin;
-    scrollbar-color: #FF6B00 #0A0A0A;
+    scrollbar-color: #FF6B00 #222222;
   }
 
   :root {

@@ -2,109 +2,155 @@
 
 import { Section } from "@/components/layout/section"
 import { Reveal } from "@/components/ui/reveal"
-import { Highlight } from "@/components/ui/highlight"
 import { Check } from "lucide-react"
+
+const plans = [
+    {
+        name: "START",
+        period: "MENSAL",
+        price: "135",
+        cents: "00",
+    },
+    {
+        name: "PRESS",
+        period: "TRIMESTRAL",
+        price: "113",
+        cents: "33",
+        installments: "3x",
+    },
+    {
+        name: "CROSS",
+        period: "SEMESTRAL",
+        price: "99",
+        cents: "00",
+        installments: "6x",
+        blockDays: "Bloqueio de até 35 dias",
+    },
+    {
+        name: "LIGHT",
+        period: "SEMESTRAL RECORRENTE",
+        price: "102",
+        cents: "19",
+        note: "PARCELA DESCONTADA NO SEU CARTÃO MENSALMENTE",
+    },
+    {
+        name: "PUMP",
+        period: "ANUAL",
+        price: "75",
+        cents: "00",
+        installments: "12x",
+        schedule: "HORÁRIO INTERMEDIÁRIO\n05:00 ÀS 15:00 (SEG A QUI)\nSEX A DOM (HORÁRIO LIVRE)",
+    },
+    {
+        name: "UP",
+        period: "",
+        badge: "HORÁRIO LIVRE",
+        benefit: "GANHE UMA AVALIAÇÃO FÍSICA E DESCONTO EM 2 CONSULTAS NUTRICIONAIS",
+        blockDays: "Bloqueio de até 100 dias",
+        price: "84",
+        cents: "90",
+        installments: "12x",
+        isSpecial: true,
+    },
+]
 
 export function PlanosSection() {
     return (
-        <Section id="planos" className="bg-brand py-16 md:py-24">
-            {/* HEADER */}
-            <Reveal className="text-center mb-12 md:mb-16">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white italic tracking-tight">
-                    PLANOS DA BE
-                </h2>
-            </Reveal>
-
-            {/* GRID DE 3 COLUNAS */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
-
-                {/* COLUNA 1 */}
-                <Reveal delay={0.1} className="flex flex-col gap-6">
-                    {/* PLANO START */}
-                    <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
-                        <h3 className="text-2xl md:text-3xl font-black text-foreground italic">PLANO START</h3>
-                        <p className="text-muted font-bold text-sm uppercase tracking-wider mt-1">MENSAL</p>
-                        <div className="mt-4 bg-brand rounded-xl px-4 py-3 inline-block">
-                            <span className="text-white font-black text-2xl md:text-3xl">R$ 135<sup className="text-lg">,00</sup></span>
-                        </div>
-                    </div>
-
-                    {/* PLANO PRESS */}
-                    <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
-                        <h3 className="text-2xl md:text-3xl font-black text-foreground italic">PLANO PRESS</h3>
-                        <p className="text-muted font-bold text-sm uppercase tracking-wider mt-1">TRIMESTRAL</p>
-                        <div className="mt-4 bg-brand rounded-xl px-4 py-3 inline-block">
-                            <span className="text-white text-sm font-bold mr-2">3X</span>
-                            <span className="text-white font-black text-2xl md:text-3xl">R$ 113<sup className="text-lg">,33</sup></span>
-                        </div>
-                    </div>
+        <Section id="planos" className="!bg-[#FF6B00] py-4 md:py-8">
+            <div className="mx-auto max-w-md md:max-w-4xl lg:max-w-6xl px-3 md:px-6">
+                {/* HEADER */}
+                <Reveal className="text-center mb-3 md:mb-6">
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-black italic text-white tracking-wide">
+                        PLANOS DA BE
+                    </h2>
                 </Reveal>
 
-                {/* COLUNA 2 */}
-                <Reveal delay={0.2} className="flex flex-col gap-6">
-                    {/* PLANO CROSS */}
-                    <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
-                        <h3 className="text-2xl md:text-3xl font-black text-foreground italic">PLANO CROSS</h3>
-                        <p className="text-muted font-bold text-sm uppercase tracking-wider mt-1">SEMESTRAL</p>
-                        <div className="mt-4 bg-brand rounded-xl px-4 py-3 inline-block">
-                            <span className="text-white text-sm font-bold mr-2">6X</span>
-                            <span className="text-white font-black text-2xl md:text-3xl">R$ 99<sup className="text-lg">,00</sup></span>
-                        </div>
-                        <p className="text-muted-light text-[10px] mt-3 text-center tracking-wide">
-                            (Bloqueio de até 35 dias)
-                        </p>
-                    </div>
+                {/* GRID DE PLANOS */}
+                <div className="space-y-2 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 lg:grid-cols-3">
+                    {plans.map((plan, index) => (
+                        <Reveal key={index} delay={0.03 * index}>
+                            <div className="overflow-hidden rounded-xl bg-white shadow-md py-2.5 md:py-4 md:h-full">
+                                <div className="p-3 md:p-5 h-full flex flex-col md:py-2.5">
+                                    {/* Header: Nome + Preço */}
+                                    <div className="flex justify-between gap-2 mb-1.5 items-start md:mb-2.5">
+                                        <div className="flex-1 min-w-0">
+                                            <h3 className="text-base md:text-xl lg:text-2xl font-black italic text-[#FF6B00] leading-tight">
+                                                PLANO {plan.name}
+                                            </h3>
+                                            <p className="text-[10px] md:text-xs lg:text-sm font-bold text-gray-800 uppercase tracking-wide leading-tight">
+                                                {plan.period}
+                                            </p>
+                                        </div>
 
-                    {/* PLANO LIGHT */}
-                    <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
-                        <h3 className="text-2xl md:text-3xl font-black text-foreground italic">PLANO LIGHT</h3>
-                        <p className="text-muted font-bold text-sm uppercase tracking-wider mt-1">SEMESTRAL RECORRENTE</p>
-                        <div className="mt-4 bg-brand rounded-xl px-4 py-3 inline-block">
-                            <span className="text-white font-black text-2xl md:text-3xl">R$ 102<sup className="text-lg">,19</sup></span>
-                        </div>
-                        <p className="text-muted text-xs mt-4 text-center uppercase tracking-wide">
-                            Parcela descontada no<br />seu cartão mensalmente
-                        </p>
-                    </div>
-                </Reveal>
+                                        {plan.price && (
+                                            <div className="flex items-baseline gap-0.5 md:gap-1 shrink-0">
+                                                {plan.installments && (
+                                                    <span className="text-xs md:text-sm font-black text-white bg-[#FF6B00] rounded px-1 md:px-2 py-0.5">
+                                                        {plan.installments}
+                                                    </span>
+                                                )}
+                                                <div
+                                                    className={`inline-flex items-baseline rounded-lg px-2 md:px-3 py-1 md:py-1.5 ${plan.isSpecial ? "bg-[#22D3EE]" : "bg-[#FF6B00]"
+                                                        }`}
+                                                >
+                                                    <span className="text-[10px] md:text-sm font-black text-white">R$</span>
+                                                    <span className="text-xl md:text-3xl lg:text-4xl font-black text-white leading-none">
+                                                        {plan.price}
+                                                    </span>
+                                                    <span className="text-xs md:text-lg font-black text-white leading-none">
+                                                        ,{plan.cents}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
 
-                {/* COLUNA 3 */}
-                <Reveal delay={0.3} className="flex flex-col gap-6">
-                    {/* PLANO PUMP */}
-                    <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
-                        <h3 className="text-2xl md:text-3xl font-black text-foreground italic">PLANO PUMP</h3>
-                        <p className="text-muted font-bold text-sm uppercase tracking-wider mt-1">ANUAL</p>
-                        <p className="text-muted text-xs mt-2 text-center uppercase tracking-wide leading-relaxed">
-                            Horário Intermediário<br />
-                            05:00 às 15:00 (Seg a Qui)<br />
-                            Sex a Dom (Horário Livre)
-                        </p>
-                        <div className="mt-4 bg-brand rounded-xl px-4 py-3 inline-block">
-                            <span className="text-white text-sm font-bold mr-2">12X</span>
-                            <span className="text-white font-black text-2xl md:text-3xl">R$ 75<sup className="text-lg">,00</sup></span>
-                        </div>
-                    </div>
+                                    {/* Badge (Horário Livre) */}
+                                    {plan.badge && (
+                                        <div className="flex items-center gap-1 mb-1 md:mb-2">
+                                            <Check className="h-3 w-3 md:h-4 md:w-4 text-[#22D3EE] shrink-0" />
+                                            <span className="text-[10px] md:text-xs font-bold text-gray-800 uppercase">{plan.badge}</span>
+                                        </div>
+                                    )}
 
-                    {/* PLANO UP */}
-                    <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
-                        <h3 className="text-2xl md:text-3xl font-black text-foreground italic">PLANO UP</h3>
-                        <div className="flex items-center justify-center gap-2 mt-1">
-                            <Check className="w-4 h-4 text-green-500" />
-                            <span className="text-foreground font-bold text-sm uppercase tracking-wider">Horário Livre</span>
-                        </div>
-                        <p className="text-muted text-xs mt-2 text-center uppercase tracking-wide leading-relaxed">
-                            Ganhe uma avaliação física e<br />
-                            desconto em 2 consultas<br />
-                            nutricionais
-                        </p>
-                        <p className="text-muted-light text-[10px] mt-2 text-center tracking-wide">
-                            (Bloqueio de até 100 dias)
-                        </p>
-                        <div className="mt-4 bg-brand rounded-xl px-4 py-3 inline-block">
-                            <span className="text-white text-sm font-bold mr-2">12X</span>
-                            <span className="text-white font-black text-2xl md:text-3xl">R$ 84<sup className="text-lg">,90</sup></span>
-                        </div>
-                    </div>
+                                    {/* Schedule (Horário Intermediário) */}
+                                    {plan.schedule && (
+                                        <p className="text-[9px] md:text-xs font-semibold text-gray-600 leading-tight whitespace-pre-line mb-1 md:mb-2">
+                                            {plan.schedule}
+                                        </p>
+                                    )}
+
+                                    {/* Benefit (Avaliação + Consultas) */}
+                                    {plan.benefit && (
+                                        <p className="text-[9px] md:text-xs font-semibold text-gray-600 leading-tight mb-1 md:mb-2">
+                                            {plan.benefit}
+                                        </p>
+                                    )}
+
+                                    {/* Block Days */}
+                                    {plan.blockDays && (
+                                        <div className="bg-gray-100 rounded px-2 md:px-3 py-1 md:py-1.5 mt-auto">
+                                            <p className="text-[9px] md:text-xs font-bold text-gray-700 leading-tight">
+                                                ✓ {plan.blockDays}
+                                            </p>
+                                        </div>
+                                    )}
+
+                                    {/* Note (Parcela Recorrente) */}
+                                    {plan.note && (
+                                        <p className="text-[9px] md:text-xs text-gray-500 leading-tight italic mt-1">{plan.note}</p>
+                                    )}
+                                </div>
+                            </div>
+                        </Reveal>
+                    ))}
+                </div>
+
+                {/* Footer Note */}
+                <Reveal delay={0.2} className="text-center mt-3 md:mt-6">
+                    <p className="text-[10px] md:text-sm text-white/80 leading-relaxed font-medium">
+                        Todos os planos incluem acesso à Musculação e Aulas Coletivas
+                    </p>
                 </Reveal>
             </div>
         </Section>
