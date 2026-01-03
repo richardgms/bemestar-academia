@@ -30,7 +30,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                         "hover:bg-brand-light text-brand-hover": variant === "ghost",
                         "text-brand underline-offset-4 hover:underline": variant === "link",
                         "bg-brand-accent text-white shadow-md hover:bg-cyan-600 font-bold": variant === "accent",
-                        "bg-whatsapp text-white hover:bg-[#128C7E] shadow-md font-semibold": variant === "whatsapp",
+                        "bg-[#22D3EE] text-white hover:bg-[#06B6D4] shadow-md font-semibold": variant === "whatsapp",
 
                         // Sizes
                         "h-12 px-8 py-4 text-base": size === "default",

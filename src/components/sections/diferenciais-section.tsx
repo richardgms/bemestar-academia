@@ -62,7 +62,7 @@ export function DiferenciaisSection() {
                             className={cn("h-full", feature.colSpan)}
                         >
                             <Card className={cn(
-                                "group relative h-full overflow-hidden transition-all duration-500 hover:shadow-2xl flex flex-col rounded-xl shadow-md border-0",
+                                "group relative h-full overflow-hidden transition-all duration-500 flex flex-col rounded-xl shadow-md border-0",
                                 // Featured Card (Image) styling overrides
                                 feature.bgImage ? "" : "bg-white"
                             )}>

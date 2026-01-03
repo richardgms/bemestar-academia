@@ -131,7 +131,7 @@ interface ModalidadeCardProps {
 
 function ModalidadeCard({ mod, Icon, color }: ModalidadeCardProps) {
     return (
-        <div className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
+        <div className="group relative bg-white rounded-xl overflow-hidden shadow-md transition-all duration-500 h-full flex flex-col">
             {/* Top Border */}
             <div className="h-2.5 w-full bg-[#FF6B00] shrink-0" />
 

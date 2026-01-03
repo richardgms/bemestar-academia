@@ -22,21 +22,21 @@ export function HeroSection() {
             </div>
 
             {/* CONTENT */}
-            <Container className="relative z-10 text-center h-[calc(100vh-56px)] md:h-[calc(100vh-128px)] flex flex-col justify-evenly md:justify-center pb-20 md:pb-16 max-[400px]:min-h-[100svh] max-[400px]:h-auto max-[400px]:justify-start max-[400px]:gap-6 max-[400px]:pt-8 max-[400px]:pb-24">
+            <Container className="relative z-10 text-center h-[calc(100vh-56px)] md:h-[calc(100vh-128px)] flex flex-col justify-evenly md:justify-center pb-12 md:pb-8 max-[400px]:min-h-[100svh] max-[400px]:h-auto max-[400px]:justify-start max-[400px]:gap-6 max-[400px]:pt-8 max-[400px]:pb-24">
                 <Reveal>
-                    <div className="inline-block px-4 py-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm">
+                    <div className="inline-block px-4 py-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm mt-4 md:mt-8 mb-2 md:mb-4">
                         <span className="text-brand font-bold tracking-wider text-sm uppercase">10 anos transformando vidas</span>
                     </div>
                 </Reveal>
 
                 <Reveal delay={0.1}>
-                    <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-8xl font-extrabold text-white leading-[1.2] md:leading-[1.1] tracking-tight max-w-6xl mx-auto">
+                    <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-8xl font-extrabold text-white leading-[1.2] md:leading-[1.1] tracking-tight max-w-6xl mx-auto mb-2 md:mb-4">
                         TREINE NO <Highlight>CONFORTO</Highlight> QUE <span className="whitespace-nowrap text-[1.56em] md:text-[1em]">V<img src="/assets/o-esticado-branco.svg" alt="O" className="inline-block h-[0.90em] w-auto mx-[-0.02em] align-middle translate-y-[-0.12em]" />CÊ</span> <span className="text-[1.25em] md:text-[1em]">MERECE<span className="text-brand-accent">.</span></span>
                     </h1>
                 </Reveal>
 
                 <Reveal delay={0.2}>
-                    <p className="text-[1.31rem] sm:text-[1.57rem] md:text-[1.57rem] text-gray-200 max-w-4xl md:max-w-3xl mx-auto leading-snug md:leading-relaxed font-medium px-4 md:px-2">
+                    <p className="text-[1.31rem] sm:text-[1.57rem] md:text-[1.57rem] text-gray-200 max-w-4xl md:max-w-3xl mx-auto leading-snug md:leading-relaxed font-medium px-4 md:px-2 mb-4 md:mb-8">
                         Estrutura premium, ambiente climatizado e acompanhamento real.
                         Transforme sua rotina na academia que é referência em Santa Rita há 10 anos.
                     </p>
@@ -62,7 +62,7 @@ export function HeroSection() {
 
             {/* SCROLL INDICATOR */}
             <motion.div
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 cursor-pointer"
+                className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/50 cursor-pointer"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Infinity, duration: 1.5 }}
             >
