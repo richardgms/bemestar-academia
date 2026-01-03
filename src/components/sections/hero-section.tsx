@@ -37,8 +37,8 @@ export function HeroSection() {
 
                 <Reveal delay={0.2}>
                     <p className="text-[1.31rem] sm:text-[1.57rem] md:text-[1.57rem] text-gray-200 max-w-4xl md:max-w-3xl mx-auto leading-snug md:leading-relaxed font-medium px-4 md:px-2 mb-4 md:mb-8">
-                        Estrutura premium, ambiente climatizado e acompanhamento real.
-                        Transforme sua rotina na academia que é referência em Santa Rita há 10 anos.
+                        Estrutura premium, ambiente <strong className="text-white">100% climatizado</strong> e acompanhamento real.
+                        Transforme sua rotina na melhor academia de <strong className="text-white">Santa Rita PB</strong> há 10 anos.
                     </p>
                 </Reveal>
 

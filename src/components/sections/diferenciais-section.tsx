@@ -13,7 +13,7 @@ const FEATURES = [
     {
         icon: Dumbbell,
         title: "Estrutura Completa",
-        description: "100% climatizada, equipamentos de ponta e espaço pensado para sua performance.",
+        description: "A única academia 100% climatizada de Santa Rita com equipamentos de ponta e espaço pensado para sua performance.",
         colSpan: "md:col-span-2",
         bgImage: "/assets/estrutura.webp"
     },
