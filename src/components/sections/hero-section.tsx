@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 
 export function HeroSection() {
     return (
-        <section id="inicio" className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-14 md:pt-16">
+        <section id="inicio" className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-8 md:pt-10">
             {/* BACKGROUND IMAGE + OVERLAY */}
             <div className="absolute inset-0 z-0">
                 <img
@@ -24,7 +24,7 @@ export function HeroSection() {
             {/* CONTENT */}
             <Container className="relative z-10 text-center h-[calc(100vh-56px)] md:h-[calc(100vh-128px)] flex flex-col justify-evenly md:justify-center pb-12 md:pb-8 max-[400px]:min-h-[100svh] max-[400px]:h-auto max-[400px]:justify-start max-[400px]:gap-6 max-[400px]:pt-8 max-[400px]:pb-24">
                 <Reveal>
-                    <div className="inline-block px-4 py-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm mt-4 md:mt-8 mb-2 md:mb-4">
+                    <div className="inline-block px-4 py-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm mb-2 md:mb-4">
                         <span className="text-brand font-bold tracking-wider text-sm uppercase">10 anos transformando vidas</span>
                     </div>
                 </Reveal>

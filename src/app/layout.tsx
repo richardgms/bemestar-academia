@@ -19,6 +19,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Bem Estar Academia | 10 Anos",
   description: "A maior estrutura de Santa Rita com o atendimento que conhece seu nome.",
+  icons: {
+    icon: "/assets/logo-icon-laranja.svg",
+  },
 };
 
 export default function RootLayout({
