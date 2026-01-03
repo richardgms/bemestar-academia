@@ -54,7 +54,7 @@ export function SocialProofSection() {
                     <Reveal delay={0.2} className="order-2 lg:order-2">
                         <div className="relative rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/3] sm:aspect-square lg:aspect-[4/5] border border-white/5">
                             <img
-                                src="/assets/fachada.png"
+                                src="/assets/fachada.webp"
                                 alt="Fachada Bem Estar Academia"
                                 className="w-full h-full object-cover"
                             />

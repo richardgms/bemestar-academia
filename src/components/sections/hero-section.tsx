@@ -14,7 +14,7 @@ export function HeroSection() {
             {/* BACKGROUND IMAGE + OVERLAY */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/assets/hero-bg.png"
+                    src="/assets/hero-bg.webp"
                     alt="Academia Bem Estar"
                     className="w-full h-full object-cover object-top"
                 />

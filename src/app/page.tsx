@@ -16,10 +16,10 @@ export default function Home() {
       <HeroSection />
       <DiferenciaisSection />
       <SocialProofSection />
+      <PlanosSection />
       <ModalidadesSection />
       <CtaIntermediarioSection />
       <HorariosSection />
-      <PlanosSection />
       <CTASection />
       <Footer />
       <WhatsAppFloat />

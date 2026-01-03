@@ -15,7 +15,7 @@ const FEATURES = [
         title: "Estrutura Completa",
         description: "100% climatizada, equipamentos de ponta e espaço pensado para sua performance.",
         colSpan: "md:col-span-2",
-        bgImage: "/assets/estrutura.png"
+        bgImage: "/assets/estrutura.webp"
     },
     {
         icon: Heart,
