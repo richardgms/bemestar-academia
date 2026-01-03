@@ -7,6 +7,7 @@ import { useState, useEffect } from "react"
 
 export function WhatsAppFloat() {
     const [isVisible, setIsVisible] = useState(false)
+    const [showPing, setShowPing] = useState(true)
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -15,6 +16,17 @@ export function WhatsAppFloat() {
 
         return () => clearTimeout(timer)
     }, [])
+
+    useEffect(() => {
+        // Parar animação ping após 5 segundos
+        if (isVisible) {
+            const pingTimer = setTimeout(() => {
+                setShowPing(false)
+            }, 5000)
+
+            return () => clearTimeout(pingTimer)
+        }
+    }, [isVisible])
 
     return (
         <AnimatePresence>
@@ -30,8 +42,10 @@ export function WhatsAppFloat() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    {/* Ping animation wrapper */}
-                    <span className="absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-20 animate-ping" />
+                    {/* Ping animation wrapper - condicional */}
+                    {showPing && (
+                        <span className="absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-20 animate-ping" />
+                    )}
 
                     <svg
                         viewBox="0 0 24 24"

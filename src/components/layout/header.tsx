@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
@@ -36,9 +37,11 @@ export function Header() {
             <Container className="flex items-center justify-between">
                 {/* LOGO */}
                 <Link href="/" className="flex items-center gap-2 group">
-                    <img
+                    <Image
                         src="/assets/logo-icon-branco.svg"
                         alt="Bem Estar"
+                        width={40}
+                        height={40}
                         className="h-8 w-8 sm:h-10 sm:w-10 transition-transform group-hover:scale-110"
                     />
                     <span className="hidden sm:block text-xl md:text-2xl tracking-tighter leading-none text-white">

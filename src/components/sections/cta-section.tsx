@@ -1,5 +1,3 @@
-"use client"
-
 import { Section } from "@/components/layout/section"
 import { Container } from "@/components/ui/container"
 import { Reveal } from "@/components/ui/reveal"
@@ -9,7 +7,7 @@ import { Dumbbell } from "lucide-react"
 
 export function CTASection() {
     return (
-        <Section className="bg-[#FF6B00] text-white text-center">
+        <Section className="bg-[#FF6B00] text-white text-center py-16 md:py-12 lg:py-16">
             <Container>
                 <Reveal>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 md:mb-4 leading-[1.1]">

@@ -1,5 +1,4 @@
-"use client"
-
+import Image from "next/image"
 import { Section } from "@/components/layout/section"
 import { Reveal } from "@/components/ui/reveal"
 import { Container } from "@/components/ui/container"
@@ -53,10 +52,13 @@ export function SocialProofSection() {
                     {/* COLUNA DIREITA: IMAGEM */}
                     <Reveal delay={0.2} className="order-2 lg:order-2">
                         <div className="relative rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/3] sm:aspect-square lg:aspect-[4/5] border border-white/5">
-                            <img
+                            <Image
                                 src="/assets/fachada.webp"
                                 alt="Fachada Bem Estar Academia"
-                                className="w-full h-full object-cover"
+                                fill
+                                quality={85}
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                className="object-cover"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                             <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">

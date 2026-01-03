@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
 import { Reveal } from "@/components/ui/reveal"
@@ -13,12 +14,16 @@ export function HeroSection() {
         <section id="inicio" className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-8 md:pt-10">
             {/* BACKGROUND IMAGE + OVERLAY */}
             <div className="absolute inset-0 z-0">
-                <img
+                <Image
                     src="/assets/hero-bg.webp"
                     alt="Academia Bem Estar"
-                    className="w-full h-full object-cover object-top"
+                    fill
+                    priority
+                    quality={85}
+                    sizes="100vw"
+                    className="object-cover object-top"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/70" />
             </div>
 
             {/* CONTENT */}
@@ -31,7 +36,7 @@ export function HeroSection() {
 
                 <Reveal delay={0.1}>
                     <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-8xl font-extrabold text-white leading-[1.2] md:leading-[1.1] tracking-tight max-w-6xl mx-auto mb-2 md:mb-4">
-                        TREINE NO <Highlight>CONFORTO</Highlight> QUE <span className="whitespace-nowrap text-[1.56em] md:text-[1em]">V<img src="/assets/o-esticado-branco.svg" alt="O" className="inline-block h-[0.90em] w-auto mx-[-0.02em] align-middle translate-y-[-0.12em]" />CÊ</span> <span className="text-[1.25em] md:text-[1em]">MERECE<span className="text-brand-accent">.</span></span>
+                        TREINE NO <Highlight>CONFORTO</Highlight> QUE <span className="whitespace-nowrap text-[1.56em] md:text-[1em]">V<Image src="/assets/o-esticado-branco.svg" alt="O" width={60} height={60} className="inline-block h-[0.90em] w-auto mx-[-0.02em] align-middle translate-y-[-0.12em]" />CÊ</span> <span className="text-[1.25em] md:text-[1em]">MERECE<span className="text-brand-accent">.</span></span>
                     </h1>
                 </Reveal>
 

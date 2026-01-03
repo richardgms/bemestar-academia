@@ -57,7 +57,7 @@ export function ModalidadesSection() {
                 eyebrow="AULAS COLETIVAS"
                 title={<>Encontre Seu <Highlight>Treino Ideal</Highlight></>}
                 description="Aulas pra todos os gostos e objetivos — e com professores que conhecem você pelo nome."
-                className="max-w-4xl mx-auto"
+                className="max-w-4xl mx-auto mb-14 md:mb-0"
             />
 
             {/* MOBILE: Horizontal Carousel */}

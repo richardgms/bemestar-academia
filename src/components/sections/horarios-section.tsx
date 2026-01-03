@@ -94,7 +94,7 @@ export function HorariosSection() {
                 eyebrow="PROGRAMAÇÃO"
                 title={<>Horários das <Highlight>Aulas</Highlight></>}
                 description="Escolha o melhor momento pra treinar. A gente te espera!"
-                className="mb-6 md:mb-10"
+                className="mb-4 md:mb-6"
             />
 
             <Reveal delay={0.2} className="flex justify-center">
@@ -141,21 +141,21 @@ export function HorariosSection() {
                         <TabsContent key={key} value={key} className="mt-0 md:mt-8 w-full max-w-4xl mx-auto">
                             <div className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] p-4 sm:p-6 md:p-8 lg:p-12 shadow-xl md:shadow-2xl shadow-zinc-200/50 border border-border/50">
                                 {Object.entries(day.periodos).map(([periodo, aulas], pIndex) => (
-                                    <div key={periodo} className={cn(pIndex > 0 && "mt-6 md:mt-10 pt-6 md:pt-10 border-t border-brand-accent/20")}>
-                                        <h3 className="text-xs sm:text-sm md:text-base font-black text-brand-accent uppercase tracking-[0.15em] md:tracking-[0.2em] mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
+                                    <div key={periodo} className={cn(pIndex > 0 && "mt-4 md:mt-6 pt-4 md:pt-6 border-t border-brand-accent/20")}>
+                                        <h3 className="text-xs sm:text-sm md:text-base font-black text-brand-accent uppercase tracking-[0.15em] md:tracking-[0.2em] mb-3 md:mb-4 flex items-center gap-2 md:gap-3">
                                             <span className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-brand-accent" />
                                             Período da {periodo}
                                         </h3>
 
                                         <div className="space-y-2 md:space-y-3">
                                             {aulas.map((aula: any, i: number) => (
-                                                <div key={i} className="flex flex-col sm:flex-row sm:items-center justify-between py-3 md:py-4 group hover:bg-brand-light rounded-xl md:rounded-2xl px-3 md:px-6 -mx-1 md:-mx-2 transition-all duration-300 border border-transparent hover:border-brand/10">
+                                                <div key={i} className="flex flex-col sm:flex-row sm:items-center justify-between py-2 md:py-3 group hover:bg-brand-light rounded-xl md:rounded-2xl px-3 md:px-6 -mx-1 md:-mx-2 transition-all duration-300 border border-transparent hover:border-brand/10">
                                                     <div className="flex items-center gap-3 md:gap-6">
-                                                        <span className="text-brand font-black font-mono text-base sm:text-lg md:text-xl lg:text-2xl bg-brand-light px-2 sm:px-3 md:px-4 py-1.5 md:py-2 rounded-lg md:rounded-xl min-w-[70px] md:min-w-[90px] text-center shadow-sm">
+                                                        <span className="text-brand group-hover:text-brand-accent font-black font-mono text-base sm:text-lg md:text-xl lg:text-2xl bg-brand-light group-hover:bg-white px-2 sm:px-3 md:px-4 py-1.5 md:py-2 rounded-lg md:rounded-xl min-w-[70px] md:min-w-[90px] text-center transition-all">
                                                             {aula.hora}
                                                         </span>
                                                         <div>
-                                                            <strong className="text-foreground text-base sm:text-lg md:text-xl block group-hover:text-brand transition-colors font-extrabold">
+                                                            <strong className="text-foreground text-base sm:text-lg md:text-xl block group-hover:text-black transition-colors font-extrabold">
                                                                 {aula.aula}
                                                             </strong>
                                                             <span className="text-xs sm:text-sm md:text-base text-muted/80">
@@ -164,8 +164,8 @@ export function HorariosSection() {
                                                         </div>
                                                     </div>
 
-                                                    <div className="hidden sm:flex items-center gap-2 md:gap-3 text-[10px] md:text-xs text-brand-accent font-black uppercase tracking-widest">
-                                                        <span className="inline-block w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-brand-accent" />
+                                                    <div className="hidden sm:flex items-center gap-2 md:gap-3 text-[10px] md:text-xs text-brand-accent group-hover:text-brand font-black uppercase tracking-widest transition-colors">
+                                                        <span className="inline-block w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-brand-accent group-hover:bg-brand transition-colors" />
                                                         Disponível
                                                     </div>
                                                 </div>

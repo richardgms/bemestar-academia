@@ -1,5 +1,4 @@
-"use client"
-
+import Image from "next/image"
 import { Section } from "@/components/layout/section"
 import { Reveal } from "@/components/ui/reveal"
 import { Container } from "@/components/ui/container"
@@ -79,10 +78,13 @@ export function DiferenciaisSection() {
                                     {feature.bgImage ? (
                                         <div className="absolute inset-0 h-full w-full bg-zinc-900">
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 z-10" />
-                                            <img
+                                            <Image
                                                 src={feature.bgImage}
                                                 alt={feature.title}
-                                                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90"
+                                                fill
+                                                quality={80}
+                                                sizes="(max-width: 768px) 100vw, 50vw"
+                                                className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-90"
                                             />
                                             <div className="absolute bottom-0 left-0 p-6 md:p-8 lg:p-10 z-20">
                                                 <div className="mb-4 md:mb-6 inline-flex items-center justify-center rounded-2xl bg-brand-accent/20 p-3 md:p-4 text-brand-accent backdrop-blur-sm border border-brand-accent/20">

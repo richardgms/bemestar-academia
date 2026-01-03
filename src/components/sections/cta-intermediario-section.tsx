@@ -1,5 +1,3 @@
-"use client"
-
 import { Section } from "@/components/layout/section"
 import { Container } from "@/components/ui/container"
 import { Reveal } from "@/components/ui/reveal"

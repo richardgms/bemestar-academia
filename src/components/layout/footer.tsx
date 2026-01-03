@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Container } from "@/components/ui/container"
 import { academia } from "@/lib/data"
 import { getWhatsAppLink } from "@/lib/whatsapp"
@@ -12,9 +13,11 @@ export function Footer() {
                     {/* COL 1: BRAND */}
                     <div className="space-y-4 md:space-y-6 text-center md:text-left">
                         <Link href="/" className="inline-flex items-center gap-2 group">
-                            <img
+                            <Image
                                 src="/assets/logo-icon-laranja.svg"
                                 alt="Bem Estar"
+                                width={40}
+                                height={40}
                                 className="h-8 w-8 md:h-10 md:w-10 brightness-110"
                             />
                             <span className="text-lg md:text-xl tracking-tight leading-none text-white">

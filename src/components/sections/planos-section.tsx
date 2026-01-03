@@ -1,5 +1,3 @@
-"use client"
-
 import { Section } from "@/components/layout/section"
 import { Reveal } from "@/components/ui/reveal"
 import { Check } from "lucide-react"
@@ -147,8 +145,8 @@ export function PlanosSection() {
                 </div>
 
                 {/* Footer Note */}
-                <Reveal delay={0.2} className="text-center mt-3 md:mt-6">
-                    <p className="text-[10px] md:text-sm text-white/80 leading-relaxed font-medium">
+                <Reveal delay={0.2} className="text-center mt-4 md:mt-6 mb-4 md:mb-0">
+                    <p className="text-xs md:text-sm text-white/90 leading-relaxed font-medium">
                         Todos os planos incluem acesso à Musculação e Aulas Coletivas
                     </p>
                 </Reveal>
