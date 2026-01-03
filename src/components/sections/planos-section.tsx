@@ -1,5 +1,9 @@
+"use client"
+
 import { Section } from "@/components/layout/section"
 import { Reveal } from "@/components/ui/reveal"
+import { Button } from "@/components/ui/button"
+import { getWhatsAppLink } from "@/lib/whatsapp"
 import { Check } from "lucide-react"
 
 const plans = [
@@ -57,7 +61,7 @@ export function PlanosSection() {
         <Section id="planos" className="!bg-[#FF6B00] py-4 md:py-8">
             <div className="mx-auto max-w-md md:max-w-4xl lg:max-w-6xl px-3 md:px-6">
                 {/* HEADER */}
-                <Reveal className="text-center mb-3 md:mb-6">
+                <Reveal className="text-center mb-4 md:mb-12">
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-black italic text-white tracking-wide">
                         PLANOS DA BE
                     </h2>
@@ -67,8 +71,17 @@ export function PlanosSection() {
                 <div className="space-y-2 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 lg:grid-cols-3">
                     {plans.map((plan, index) => (
                         <Reveal key={index} delay={0.03 * index}>
-                            <div className="overflow-hidden rounded-xl bg-white shadow-md py-2.5 md:py-4 md:h-full">
-                                <div className="p-3 md:p-5 h-full flex flex-col md:py-2.5">
+                            <div className="overflow-hidden rounded-xl bg-white shadow-md py-2.5 md:py-4 md:h-full relative">
+                                {/* Logo decorativo no background */}
+                                <div className="absolute inset-0 flex items-center justify-start pointer-events-none overflow-hidden">
+                                    <img
+                                        src="/assets/logo-icon-laranja.svg"
+                                        alt=""
+                                        className="w-[200%] h-[200%] object-contain opacity-[0.1] -rotate-12 -ml-24"
+                                    />
+                                </div>
+
+                                <div className="p-3 md:p-5 h-full flex flex-col md:py-2.5 relative z-10">
                                     {/* Header: Nome + Preço */}
                                     <div className="flex justify-between gap-2 mb-1.5 items-start md:mb-2.5">
                                         <div className="flex-1 min-w-0">
@@ -146,9 +159,23 @@ export function PlanosSection() {
 
                 {/* Footer Note */}
                 <Reveal delay={0.2} className="text-center mt-4 md:mt-6 mb-4 md:mb-0">
-                    <p className="text-xs md:text-sm text-white/90 leading-relaxed font-medium">
+                    <p className="text-xs md:text-sm text-white/90 leading-relaxed font-medium mb-4 md:mb-6">
                         Todos os planos incluem acesso à Musculação e Aulas Coletivas
                     </p>
+
+                    <Button
+                        size="lg"
+                        className="h-12 md:h-14 px-6 md:px-8 text-sm md:text-base font-black italic uppercase tracking-wider bg-white text-brand hover:bg-zinc-100 shadow-xl shadow-black/20"
+                        asChild
+                    >
+                        <a
+                            href={getWhatsAppLink("Olá! Vi os planos no site e gostaria de saber mais informações.")}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Falar com a Gente
+                        </a>
+                    </Button>
                 </Reveal>
             </div>
         </Section>
