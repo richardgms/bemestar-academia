@@ -31,7 +31,7 @@ export function Header() {
 
     return (
         <header
-            className="fixed top-0 left-0 right-0 z-50 bg-brand h-20 md:h-16 flex items-center shadow-md"
+            className="fixed top-0 left-0 right-0 z-50 bg-brand h-14 md:h-16 flex items-center shadow-md"
         >
             <Container className="flex items-center justify-between">
                 {/* LOGO */}
